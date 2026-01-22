@@ -17,7 +17,7 @@ async function fetchData() {
     
     // add items to shop div and display them in p tags
     const items = document.getElementById("items");
-    console.log(items)
+    // console.log(items)
     for (let i=0;i<10;i++){
         let newItem = document.createElement("p");
         let newButton = document.createElement("button");
