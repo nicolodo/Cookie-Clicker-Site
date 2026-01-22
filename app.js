@@ -28,8 +28,6 @@ async function fetchData() {
         console.log(shopItems[i]);
         items.appendChild(newItem);
     }
-    console.log(shopItems[0].name);
-    
 }
 // 1. get cookie img and setup on click event
 const cookieImg = document.getElementById("cookieImg");
