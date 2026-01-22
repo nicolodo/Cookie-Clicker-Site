@@ -9,15 +9,25 @@ const cookieBank = document.getElementById("cookieBank");
 
 async function fetchData() {
     // fetch the items from the shop
-    const shopItems = await fetch("https://cookie-upgrade-api.vercel.app/api/upgrades");
-    console.log("HTTP Response:", shopItems);
-    const json = await shopItems.json();
-    console.log("JSON Data:", json);
+    const apiResponse = await fetch("https://cookie-upgrade-api.vercel.app/api/upgrades");
+    console.log("HTTP Response:", apiResponse);
+    const shopItems = await apiResponse.json();
+    console.log("JSON Data:", shopItems);
     
+    // add items to shop div and display them in p tags
+    const items = document.getElementById("items");
+    console.log(items)
     for (let i=0;i<10;i++){
-        console.log(json[i]);
+        let newItem = document.createElement("p");
+        let newButton = document.createElement("button");
+        // add item to page
+        newItem.innerHTML = shopItems[i].name + ': ' 
+            // add button inside p tag
+            + '<button>'+shopItems[i].cost+'</button>';
+        console.log(shopItems[i]);
+        items.appendChild(newItem);
     }
-    console.log(json[0].name);
+    console.log(shopItems[0].name);
     
 }
 // 1. get cookie img and setup on click event
