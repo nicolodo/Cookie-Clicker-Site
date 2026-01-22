@@ -10,16 +10,6 @@ const cookieBank = document.getElementById("cookieBank");
 // fetch the items from the shop
 
 
-let costs = {
-    'rollingPin': 10,
-    'cookieMoulds': 100
-}
-
-let listCost = [{
-    name: 'rollingPin',
-    cost: 10
-}]
-
 console.log("rollingPin cost: ", costs.rollingPin);
 console.log("cookieMoulds cost: ", costs.cookieMoulds);
 
