@@ -13,7 +13,7 @@ async function fetchData() {
     console.log("HTTP Response:", apiResponse);
     const shopItems = await apiResponse.json();
     console.log("JSON Data:", shopItems);
-    // item.attribute: id name cost increase
+    // item.    attribute: id name cost increase
     
     // add items to shop div and display them in p tags
     const items = document.getElementById("items");
