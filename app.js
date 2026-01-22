@@ -3,6 +3,7 @@ console.log("Cookie Clicker Started!");
 
 // Global variables
 let cookies = 0; // later get this value from local storage
+// 2. get cookie bank and total cookies by id selector
 const CookieTotal = document.getElementById("cookieTotal");
 const cookieBank = document.getElementById("cookieBank");
 
@@ -24,7 +25,6 @@ cookieImg.addEventListener("click", (event)=> {
     CookieTotal.innerText = 'Cookie Total: ' + (cookies);
 });
 
-// 2. get cookie bank and total cookies by id selector
 
 
 
