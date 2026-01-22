@@ -9,7 +9,7 @@ const cookieBank = document.getElementById("cookieBank");
 async function fetchData() {
     // Cost of things in the shop
     // fetch the items from the shop
-    shopItems = fetch("https://cookie-upgrade-api.vercel.app/api/upgrades#/");
+    shopItems = await fetch("https://cookie-upgrade-api.vercel.app/api/upgrades");
     console.log(shopItems);
     
     // console.log("rollingPin cost: ", costs.rollingPin);
