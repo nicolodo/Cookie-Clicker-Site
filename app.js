@@ -8,10 +8,11 @@ const cookieBank = document.getElementById("cookieBank");
 
 // Cost of things in the shop
 // fetch the items from the shop
+shopItems = fetch("https://cookie-upgrade-api.vercel.app/api/upgrades#/")
+console.log(shopItems)
 
-
-console.log("rollingPin cost: ", costs.rollingPin);
-console.log("cookieMoulds cost: ", costs.cookieMoulds);
+// console.log("rollingPin cost: ", costs.rollingPin);
+// console.log("cookieMoulds cost: ", costs.cookieMoulds);
 
 // 1. get cookie img and setup on click event
 const cookieImg = document.getElementById("cookieImg");
