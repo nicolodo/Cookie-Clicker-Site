@@ -26,10 +26,13 @@ console.log("cookieMoulds cost: ", costs.cookieMoulds);
 // 1. get cookie img and setup on click event
 const cookieImg = document.getElementById("cookieImg");
 cookieImg.addEventListener("click", (event)=> {
-    console.log("The cookie has been clicked!")
+    console.log("The cookie has been clicked!", cookies++);
+    cookieBank.innerText = 'Cookie Bank: ' + (cookies);
+    CookieTotal.innerText = 'Cookie Total: ' + (cookies);
 });
 
 // 2. get cookie bank and total cookies by id selector
+
 
 
 
