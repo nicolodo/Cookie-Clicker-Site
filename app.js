@@ -8,13 +8,16 @@ const CookieTotal = document.getElementById("cookieTotal");
 const cookieBank = document.getElementById("cookieBank");
 
 async function fetchData() {
-    // Cost of things in the shop
     // fetch the items from the shop
-    shopItems = await fetch("https://cookie-upgrade-api.vercel.app/api/upgrades");
-    console.log(shopItems);
+    const shopItems = await fetch("https://cookie-upgrade-api.vercel.app/api/upgrades");
+    console.log("HTTP Response:", shopItems);
+    const json = await shopItems.json();
+    console.log("JSON Data:", json);
     
-    // console.log("rollingPin cost: ", costs.rollingPin);
-    // console.log("cookieMoulds cost: ", costs.cookieMoulds);
+    for (let i=0;i<10;i++){
+        console.log(json[i]);
+    }
+    console.log(json[0].name);
     
 }
 // 1. get cookie img and setup on click event
@@ -25,7 +28,7 @@ cookieImg.addEventListener("click", (event)=> {
     CookieTotal.innerText = 'Cookie Total: ' + (cookies);
 });
 
-
+fetchData();
 
 
 
