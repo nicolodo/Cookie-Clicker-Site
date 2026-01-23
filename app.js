@@ -70,6 +70,9 @@ cookieImg.addEventListener("click", (event) => {
 
 fetchData();
 
+function incCPS(increment){
+    cookiesPerSecond += increment;
+}
 
 function updateText() {
         cookieBankElem.innerText = 'Cookie Bank: ' + (numCookies);
