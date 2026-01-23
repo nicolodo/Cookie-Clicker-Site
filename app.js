@@ -13,8 +13,8 @@ let cookieBankVar = 0;
 cookieBankVar = localStorage.getItem("cookieBankVar")
 
 // 2. get cookie bank and total cookies by id selector 
-const cookieTotal = document.getElementById("cookieTotal");
-const cookieBank = document.getElementById("cookieBank");
+const cookieTotalElem = document.getElementById("cookieTotalElem");
+const cookieBankElem = document.getElementById("cookieBankElem");
 
 updateText();
 
@@ -43,7 +43,7 @@ async function fetchData() {
             // if (cookies >= shopItems[i].cost){
                 cookies -= shopItems[i].cost;
                 console.log("you bought a ",shopItems[i].name);
-                updateText(cookieBank,cookieTotal);
+                updateText(cookieBankElem,cookieTotalElem);
             // } 
         })
         // add shop item to items div
@@ -63,8 +63,8 @@ fetchData();
 
 
 function updateText() {
-        cookieBank.innerText = 'Cookie Bank: ' + (cookies);
-        cookieTotal.innerText = 'Cookie Total: ' + (cookies);
+        cookieBankElem.innerText = 'Cookie Bank: ' + (cookies);
+        cookieTotalElem.innerText = 'Cookie Total: ' + (cookies);
 }
 
 function saveCookies(){
