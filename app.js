@@ -92,7 +92,7 @@ function incCookies(){
 
 function buyItem(item){
     numCookies -= item.cost;
-    cookiesPerSecond += item.increment;
+    cookiesPerSecond += item.increase;
 }
 
 setInterval(()=>{
