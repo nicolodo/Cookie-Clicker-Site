@@ -53,7 +53,7 @@ async function fetchData() {
                 buyItem(shopItems[i]);
                 // numCookies -= shopItems[i].cost;
                 console.log("you bought a ",shopItems[i].name);
-                // updateText(cookieBankElem,cookieTotalElem);
+                updateText();
             // } 
         })
         // add shop item to items div
