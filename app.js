@@ -63,3 +63,6 @@ function saveCookies(){
     localStorage.setItem("cookies",cookies);
 }
 
+function incrementCookies(){
+    cookies += cookiesPerSecond;
+}
