@@ -50,7 +50,6 @@ async function fetchData() {
         // setup buy click event that does a c.log and decreases cookies
         newItem.addEventListener("click", (event) => {
             buyItem(shopItems[i]);
-            updateText();
         })
         // add shop item to items div
         items.appendChild(newItem);
@@ -91,6 +90,7 @@ function buyItem(item){
     numCookies -= item.cost;
     cookiesPerSecond += item.increase;
     console.log("you bought a ",shopItems[i].name);
+    updateText();
     } else {
         alert("That is too expensive!")
     }
