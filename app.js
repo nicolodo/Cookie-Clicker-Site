@@ -8,7 +8,6 @@ let numCookies = Number(localStorage.getItem("numCookies")) || 1;
 let cookiesPerSecond = Number(localStorage.getItem("cookiesPerSecond")) || 1;
 
     // setup cookies storage
-let cookieTotalVar = 0;
 // let cookieTotalVar = Number(localStorage.getItem("cookieTotalVar"))|| 0;
 // let cookieBankVar = Number(localStorage.getItem("cookieBankVar")) || 0;
 
@@ -81,6 +80,7 @@ function updateText() {
 
 function saveCookies(){
     localStorage.setItem("numCookies",numCookies);
+    localStorage.setItem("cookiesPerSecond",cookiesPerSecond);
 }
 
 function incCookies(){
