@@ -32,11 +32,11 @@ User Stories
 🐿️ As a user, I want the cookie count to increment automatically and the game state to update each second so that the game progresses even when I’m not actively clicking.
 🐿️ As a user, I want the game state to be managed every second using setInterval to ensure my progress is saved and the game remains updated.
 Requirements
-🎯 Fetch upgrade data from the provided API and at least one upgrade from the API update the cookie count.
-🎯 Ensure that functions are used effectively to keep code organised and reusable.
-🎯 Implement event listeners to handle user interactions.
-🎯 Use local storage to save and restore the cookie count and relevant game information.
-🎯 Use setInterval to increment the cookie count and manage the game state each second.
+🎯 Fetch upgrade data from the provided API and at least one upgrade from the API update the cookie count.(done)
+🎯 Ensure that functions are used effectively to keep code organised and reusable. (done)
+🎯 Implement event listeners to handle user interactions. (done)
+🎯 Use local storage to save and restore the cookie count and relevant game information. (done)
+🎯 Use setInterval to increment the cookie count and manage the game state each second. (done)
 Managing the game state includes saving progress and updating the DOM.
 Assignment Support
 Here is some pseudo-code…
