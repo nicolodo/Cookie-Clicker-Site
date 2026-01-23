@@ -56,16 +56,28 @@ Below are some examples of stretch goals and user stories that you could add to 
 
 Stretch User Stories
 🐿️ As a developer, I want to use a single function to handle all upgrades, so that the code is more organized and easier to maintain. (done)
-🐿️ As a user, I want the game to include animations, sound effects, or other visual effects, so that my experience is more engaging and enjoyable. 
+🐿️ As a user, I want the game to include animations, sound effects, or other visual effects, so that my experience is more engaging and enjoyable. (i will rotate the cookie 1 degree every second)
 🐿️ As a developer, I want the README to provide a clear project description, deployment instructions, and other relevant information, so that it’s easy to understand and use the project.
 🐿️ As a user, I want the game to handle errors well, so that I have a smooth experience even when something goes wrong. (???)
 🐿️ As a user, I want a menu to adjust game options like sound effects and display preferences, so that I can customize the game to my liking.
 Stretch Requirements (ok add music and music toggle button)
 🏹 Consolidate upgrade management by managing all upgrades in a single function. (done)
 🏹 Improve UX with animations, sound effects, or other visual effects. 
+    (add toggle p tags and buttons for below feature)
+(description of the project? Would this be "This is a cookie clicker clone"
+    it exists to test my skills with api fetch requests, event handling,
+    making useful functions, and saving data locally for the user)
+    (add music and later music toggle button)
+    (add sound each time cookie is clicked & toggle button)
+    (rotate the cookie 1 degree every second )
 🏹 Fantastic use of README to provide important information such as a description of the project, how to deploy and other app information.
+(description of the project? Would this be "This is a cookie clicker clone"
+    it exists to test my skills with api fetch requests, event handling,
+    making useful functions, and saving data locally for the user)
 🏹 Implement error handling using try/catch. (where should I use this?)
-🏹 Create a menu for users to adjust game options like sound effects or display preferences. (make a hamburger menu?)
+🏹 Create a menu for users to adjust game options like sound effects or display preferences. (make a hamburger menu?
+    show or hide a div in a grid/flexbox containing p tags with buttons 
+    that control yes no vars for music, and animation)
 Reflection
 Please also provide an assignment reflection in your project README.md file.
 
