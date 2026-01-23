@@ -12,8 +12,9 @@ let cookiesPerSecond = Number(localStorage.getItem("cookiesPerSecond")) || 1;
 // let cookieBankVar = Number(localStorage.getItem("cookieBankVar")) || 0;
 
 // 2. get cookie bank and total cookies by id selector 
+const cookiesPerSecondElem = document.getElementById("CPS");
 const cookieTotalElem = document.getElementById("cookieTotal");
-const cookieBankElem = document.getElementById("cookieBank");
+const numCookiesElem = document.getElementById("numCookies");
 
 document.getElementById('reset').addEventListener('click',()=>{
     reset();
