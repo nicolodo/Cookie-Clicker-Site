@@ -52,7 +52,6 @@ async function fetchData() {
             // if (numCookies >= shopItems[i].cost){
                 buyItem(shopItems[i]);
                 // numCookies -= shopItems[i].cost;
-                console.log("you bought a ",shopItems[i].name);
                 updateText();
             // } 
         })
@@ -93,6 +92,7 @@ function incCookies(){
 function buyItem(item){
     numCookies -= item.cost;
     cookiesPerSecond += item.increase;
+    console.log("you bought a ",shopItems[i].name);
 }
 
 setInterval(()=>{
