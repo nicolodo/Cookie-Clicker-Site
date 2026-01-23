@@ -55,17 +55,17 @@ To achieve a 4/4 in your assignment, aim to achieve all of the requirements, plu
 Below are some examples of stretch goals and user stories that you could add to your project, but are not expected to.
 
 Stretch User Stories
-🐿️ As a developer, I want to use a single function to handle all upgrades, so that the code is more organized and easier to maintain.
-🐿️ As a user, I want the game to include animations, sound effects, or other visual effects, so that my experience is more engaging and enjoyable.
+🐿️ As a developer, I want to use a single function to handle all upgrades, so that the code is more organized and easier to maintain. (done)
+🐿️ As a user, I want the game to include animations, sound effects, or other visual effects, so that my experience is more engaging and enjoyable. 
 🐿️ As a developer, I want the README to provide a clear project description, deployment instructions, and other relevant information, so that it’s easy to understand and use the project.
-🐿️ As a user, I want the game to handle errors well, so that I have a smooth experience even when something goes wrong.
+🐿️ As a user, I want the game to handle errors well, so that I have a smooth experience even when something goes wrong. (???)
 🐿️ As a user, I want a menu to adjust game options like sound effects and display preferences, so that I can customize the game to my liking.
-Stretch Requirements
-🏹 Consolidate upgrade management by managing all upgrades in a single function.
-🏹 Improve UX with animations, sound effects, or other visual effects.
+Stretch Requirements (ok add music and music toggle button)
+🏹 Consolidate upgrade management by managing all upgrades in a single function. (done)
+🏹 Improve UX with animations, sound effects, or other visual effects. 
 🏹 Fantastic use of README to provide important information such as a description of the project, how to deploy and other app information.
-🏹 Implement error handling using try/catch.
-🏹 Create a menu for users to adjust game options like sound effects or display preferences.
+🏹 Implement error handling using try/catch. (where should I use this?)
+🏹 Create a menu for users to adjust game options like sound effects or display preferences. (make a hamburger menu?)
 Reflection
 Please also provide an assignment reflection in your project README.md file.
 
