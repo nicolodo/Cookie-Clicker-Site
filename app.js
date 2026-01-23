@@ -2,17 +2,15 @@
 console.log("Cookie Clicker Started!");
 
 // Global variables
-let numCookies = 1;
-if (localStorage.getItem("numCookies")){
-    numCookies = localStorage.getItem("numCookies"); //  get this value from local storage
-}
-let cookiesPerSecond = 1;
-cookiesPerSecond = localStorage.getItem("cookiesPerSecond");
+    // local storage stores as a string, & converts to Number()
+    // Checks if numCookies exists in local & if no sets it to 1
+let numCookies = Number(localStorage.getItem("numCookies")) || 1;
+let cookiesPerSecond = Number(localStorage.getItem("cookiesPerSecond")) || 1;
+
     // setup cookies storage
 let cookieTotalVar = 0;
-cookieTotalVar = localStorage.getItem("cookieTotalVar");
-let cookieBankVar = 0;
-cookieBankVar = localStorage.getItem("cookieBankVar")
+// let cookieTotalVar = Number(localStorage.getItem("cookieTotalVar"))|| 0;
+// let cookieBankVar = Number(localStorage.getItem("cookieBankVar")) || 0;
 
 // 2. get cookie bank and total cookies by id selector 
 const cookieTotalElem = document.getElementById("cookieTotal");
