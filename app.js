@@ -47,7 +47,7 @@ const cookieImg = document.getElementById("cookieImg");
 cookieImg.addEventListener("click", (event) => {
     cookies++;
     console.log("The cookie has been clicked!");
-    updateCookies(cookies);
+    saveCookies(cookies);
     updateText();
 });
 
@@ -59,7 +59,7 @@ function updateText() {
         cookieTotal.innerText = 'Cookie Total: ' + (cookies);
 }
 
-function updateCookies(){
+function saveCookies(){
     localStorage.setItem("cookies",cookies);
 }
 
