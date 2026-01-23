@@ -49,7 +49,7 @@ async function fetchData() {
         localStorage.setItem(shopItems[i].id,shopItems[i]);
         // setup buy click event that does a c.log and decreases cookies
         newItem.addEventListener("click", (event) => {
-                buyItem(shopItems[i]);
+            buyItem(shopItems[i]);
             updateText();
         })
         // add shop item to items div
