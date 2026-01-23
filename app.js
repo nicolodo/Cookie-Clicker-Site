@@ -50,7 +50,8 @@ async function fetchData() {
         // setup buy click event that does a c.log and decreases cookies
         newItem.addEventListener("click", (event) => {
             // if (numCookies >= shopItems[i].cost){
-                numCookies -= shopItems[i].cost;
+                buyItem(shopItems[i]);
+                // numCookies -= shopItems[i].cost;
                 console.log("you bought a ",shopItems[i].name);
                 updateText(cookieBankElem,cookieTotalElem);
             // } 
@@ -75,8 +76,9 @@ function incCPS(increment){
 }
 
 function updateText() {
-        cookieBankElem.innerText = 'Cookie Bank: ' + (numCookies);
+        numCookiesElem.innerText = 'Cookie Bank: ' + (numCookies);
         cookieTotalElem.innerText = 'Cookie Total: ' + (numCookies);
+        cookiesPerSecondElem.innerText = 'Cookies per second: ' + (cookiesPerSecond);
 }
 
 function saveCookies(){
