@@ -6,6 +6,11 @@ let cookies = 1;
 cookies = localStorage.getItem("cookies"); //  get this value from local storage
 let cookiesPerSecond = 1;
 cookiesPerSecond = localStorage.getItem("cookiesPerSecond");
+    // setup cookies storage
+let cookieTotalVar = 0;
+cookieTotalVar = localStorage.getItem("cookieTotalVar");
+let cookieBankVar = 0;
+cookieBankVar = localStorage.getItem("cookieBankVar")
 
 // 2. get cookie bank and total cookies by id selector 
 const cookieTotal = document.getElementById("cookieTotal");
