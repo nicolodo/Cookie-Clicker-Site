@@ -40,4 +40,12 @@ cookieImg.addEventListener("click", (event)=> {
 fetchData();
 
 
+function updateText() {
+        cookieBank.innerText = 'Cookie Bank: ' + (cookies);
+        cookieTotal.innerText = 'Cookie Total: ' + (cookies);
+}
+
+function updateCookies(){
+    localStorage.setItem("cookies",cookies);
+}
 
