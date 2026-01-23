@@ -15,8 +15,17 @@ let cookieBankVar = 0;
 cookieBankVar = localStorage.getItem("cookieBankVar")
 
 // 2. get cookie bank and total cookies by id selector 
-const cookieTotalElem = document.getElementById("cookieTotalElem");
-const cookieBankElem = document.getElementById("cookieBankElem");
+const cookieTotalElem = document.getElementById("cookieTotal");
+const cookieBankElem = document.getElementById("cookieBank");
+
+document.getElementById('reset').addEventListener('click',()=>{
+    reset();
+});
+
+function reset(){
+    numCookies = 0;
+    cookiesPerSecond = 1;
+}
 
 updateText();
 
