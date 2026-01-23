@@ -85,3 +85,9 @@ function saveCookies(){
 function incCookies(){
     numCookies += cookiesPerSecond;
 }
+
+setInterval(()=>{
+    incCookies();
+    saveCookies();
+    updateText();
+},1000);
