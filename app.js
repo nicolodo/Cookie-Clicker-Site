@@ -2,8 +2,10 @@
 console.log("Cookie Clicker Started!");
 
 // Global variables
-let cookies = 1;
-cookies = localStorage.getItem("cookies"); //  get this value from local storage
+let numCookies = 1;
+if (localStorage.getItem("numCookies")){
+    numCookies = localStorage.getItem("numCookies"); //  get this value from local storage
+}
 let cookiesPerSecond = 1;
 cookiesPerSecond = localStorage.getItem("cookiesPerSecond");
     // setup cookies storage
@@ -40,8 +42,8 @@ async function fetchData() {
         localStorage.setItem(shopItems[i].id,shopItems[i]);
         // setup buy click event that does a c.log and decreases cookies
         newItem.addEventListener("click", (event) => {
-            // if (cookies >= shopItems[i].cost){
-                cookies -= shopItems[i].cost;
+            // if (numCookies >= shopItems[i].cost){
+                numCookies -= shopItems[i].cost;
                 console.log("you bought a ",shopItems[i].name);
                 updateText(cookieBankElem,cookieTotalElem);
             // } 
@@ -53,9 +55,9 @@ async function fetchData() {
 // 1. get cookie img and setup on click event
 const cookieImg = document.getElementById("cookieImg");
 cookieImg.addEventListener("click", (event) => {
-    cookies++;
+    numCookies++;
     console.log("The cookie has been clicked!");
-    saveCookies(cookies);
+    saveCookies(numCookies);
     updateText();
 });
 
@@ -63,14 +65,14 @@ fetchData();
 
 
 function updateText() {
-        cookieBankElem.innerText = 'Cookie Bank: ' + (cookies);
-        cookieTotalElem.innerText = 'Cookie Total: ' + (cookies);
+        cookieBankElem.innerText = 'Cookie Bank: ' + (numCookies);
+        cookieTotalElem.innerText = 'Cookie Total: ' + (numCookies);
 }
 
 function saveCookies(){
-    localStorage.setItem("cookies",cookies);
+    localStorage.setItem("numCookies",numCookies);
 }
 
 function incCookies(){
-    cookies += cookiesPerSecond;
+    numCookies += cookiesPerSecond;
 }
