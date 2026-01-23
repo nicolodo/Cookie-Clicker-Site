@@ -49,11 +49,8 @@ async function fetchData() {
         localStorage.setItem(shopItems[i].id,shopItems[i]);
         // setup buy click event that does a c.log and decreases cookies
         newItem.addEventListener("click", (event) => {
-            // if (numCookies >= shopItems[i].cost){
                 buyItem(shopItems[i]);
-                // numCookies -= shopItems[i].cost;
-                updateText();
-            // } 
+            updateText();
         })
         // add shop item to items div
         items.appendChild(newItem);
@@ -90,9 +87,13 @@ function incCookies(){
 }
 
 function buyItem(item){
+    if (numCookies >= item.cost){
     numCookies -= item.cost;
     cookiesPerSecond += item.increase;
     console.log("you bought a ",shopItems[i].name);
+    } else {
+        alert("That is too expensive!")
+    }
 }
 
 setInterval(()=>{
