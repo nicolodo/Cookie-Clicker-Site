@@ -2,10 +2,13 @@
 console.log("Cookie Clicker Started!");
 
 // Global variables
-let cookies = 0; // later get this value from local storage
+let cookies = 1;
+cookies = localStorage.getItem("cookies"); //  get this value from local storage
 // 2. get cookie bank and total cookies by id selector
-const CookieTotal = document.getElementById("cookieTotal");
+const cookieTotal = document.getElementById("cookieTotal");
 const cookieBank = document.getElementById("cookieBank");
+
+updateText();
 
 async function fetchData() {
     // fetch the items from the shop
@@ -25,16 +28,27 @@ async function fetchData() {
         newItem.innerHTML = shopItems[i].name + ': ' 
             // add button inside p tag
             + '<button>'+shopItems[i].cost+'</button>';
-        console.log(shopItems[i]);
+        // store current item info locally
+        localStorage.setItem(shopItems[i].id,shopItems[i]);
+        // setup buy click event that does a c.log and decreases cookies
+        newItem.addEventListener("click", (event) => {
+            // if (cookies >= shopItems[i].cost){
+                cookies -= shopItems[i].cost;
+                console.log("you bought a ",shopItems[i].name);
+                updateText(cookieBank,cookieTotal);
+            // } 
+        })
+        // add shop item to items div
         items.appendChild(newItem);
     }
 }
 // 1. get cookie img and setup on click event
 const cookieImg = document.getElementById("cookieImg");
-cookieImg.addEventListener("click", (event)=> {
-    console.log("The cookie has been clicked!", cookies++);
-    cookieBank.innerText = 'Cookie Bank: ' + (cookies);
-    CookieTotal.innerText = 'Cookie Total: ' + (cookies);
+cookieImg.addEventListener("click", (event) => {
+    cookies++;
+    console.log("The cookie has been clicked!");
+    updateCookies(cookies);
+    updateText();
 });
 
 fetchData();
