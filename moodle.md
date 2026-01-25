@@ -61,7 +61,7 @@ Stretch User Stories
     (deployment instructions: how to git clone/ download the project and how to run it)
     (download the live server extension in vsCode, run the command pallet in vsCode)
 🐿️ As a user, I want the game to handle errors well, so that I have a smooth experience even when something goes wrong. (???)
-    (try catch)
+    (try catch) (DONE) 
 🐿️ As a user, I want a menu to adjust game options like sound effects and display preferences, so that I can customize the game to my liking.
 Stretch Requirements (ok add music and music toggle button)
     (have toggle buttons and store the results locally)
@@ -78,7 +78,7 @@ Stretch Requirements (ok add music and music toggle button)
 (description of the project? Would this be "This is a cookie clicker clone"
     it exists to test my skills with api fetch requests, event handling,
     making useful functions, and saving data locally for the user)
-🏹 Implement error handling using try/catch. (where should I use this?)
+🏹 Implement error handling using try/catch. (where should I use this?) (DONE)
 🏹 Create a menu for users to adjust game options like sound effects or display preferences. (make a hamburger menu?
     show or hide a div in a grid/flexbox containing p tags with buttons and store the results locally 
     that control yes no vars for music, and animation)
