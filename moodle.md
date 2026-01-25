@@ -58,12 +58,16 @@ Stretch User Stories
 🐿️ As a developer, I want to use a single function to handle all upgrades, so that the code is more organized and easier to maintain. (done)
 🐿️ As a user, I want the game to include animations, sound effects, or other visual effects, so that my experience is more engaging and enjoyable. (i will rotate the cookie 1 degree every second)
 🐿️ As a developer, I want the README to provide a clear project description, deployment instructions, and other relevant information, so that it’s easy to understand and use the project.
+    (deployment instructions: how to git clone/ download the project and how to run it)
+    (download the live server extension in vsCode, run the command pallet in vsCode)
 🐿️ As a user, I want the game to handle errors well, so that I have a smooth experience even when something goes wrong. (???)
+    (try catch)
 🐿️ As a user, I want a menu to adjust game options like sound effects and display preferences, so that I can customize the game to my liking.
 Stretch Requirements (ok add music and music toggle button)
+    (have toggle buttons and store the results locally)
 🏹 Consolidate upgrade management by managing all upgrades in a single function. (done)
 🏹 Improve UX with animations, sound effects, or other visual effects. 
-    (add toggle p tags and buttons for below feature)
+    (add toggle p tags and buttons and store the results locally for below feature)
 (description of the project? Would this be "This is a cookie clicker clone"
     it exists to test my skills with api fetch requests, event handling,
     making useful functions, and saving data locally for the user)
@@ -76,7 +80,7 @@ Stretch Requirements (ok add music and music toggle button)
     making useful functions, and saving data locally for the user)
 🏹 Implement error handling using try/catch. (where should I use this?)
 🏹 Create a menu for users to adjust game options like sound effects or display preferences. (make a hamburger menu?
-    show or hide a div in a grid/flexbox containing p tags with buttons 
+    show or hide a div in a grid/flexbox containing p tags with buttons and store the results locally 
     that control yes no vars for music, and animation)
 Reflection
 Please also provide an assignment reflection in your project README.md file.
