@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Clicker Project</title>
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="Main">
         <h1>Cookie Clicker Project</h1>
         <button id="reset">Reset</button>
         <br>
+        <div class=”imageArea”>
+            <img id="cookieImg" src="./images/cookie.jpg" alt="big cookie">
+            <audio id=”audio1">
+            <source src=”Meow.wav” type=”audio/mpeg” />
+            </audio>
+        </div>
         <img id="cookieImg" src="./images/cookie.jpg" alt="big cookie">
         <p id="numCookies">cookies: </p>
         <p id="CPS">cookies per second: </p>
@@ -19,6 +26,9 @@
 
     <div class="settings">
         <p>music: <button>on</button></p>
+        <audio id="musicControls" loop autoplay="autoplay" controls="controls" display="none">
+            <source src="music.mp3" />     
+        </audio>
         <p>sound: <button>on</button></p>
         <p>visual fx: <button>on</button></p>
 

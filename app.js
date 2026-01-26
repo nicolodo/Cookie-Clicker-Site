@@ -113,3 +113,9 @@ setInterval(()=>{
     saveCookies();
     updateText();
 },1000);
+
+// cookie click sound
+imageArea.addEventListener("click", (evt) => {
+var myAudio1 = document.getElementById("audio1");
+myAudio1.play()
+});
