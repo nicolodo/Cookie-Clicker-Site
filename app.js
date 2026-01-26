@@ -115,7 +115,29 @@ setInterval(()=>{
 },1000);
 
 // cookie click sound
-imageArea.addEventListener("click", (evt) => {
-var myAudio1 = document.getElementById("audio1");
-myAudio1.play()
+// imageArea.addEventListener("click", (event) => {
+// var myAudio1 = document.getElementById("audio1");
+// myAudio1.play()
+// });
+
+// music toggle controls
+let musicPlaying = true;
+document.getElementById("musicToggle").addEventListener("click", (event) => {
+    var x = document.getElementById("musicControls");
+    if (musicPlaying){
+        x.pause();
+        musicPlaying = !musicPlaying;
+    } else {
+        x.play();
+        musicPlaying = !musicPlaying;
+     }
 });
+
+// function playAudio() {
+//   x.play();
+// }
+
+// function pauseAudio() {
+//   x.pause();
+// }document.get
+// })
